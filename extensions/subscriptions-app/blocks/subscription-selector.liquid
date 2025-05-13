@@ -1,0 +1,30 @@
+{% comment %}
+  Loads the CSS and JS bundles for the React subscription app
+  and provides a root element for React to mount onto.
+  CSS/JS filenames should match the output from 'pnpm build'.
+{% endcomment %}
+
+{{ 'subscriptions-react.css' | asset_url | stylesheet_tag }}
+
+<div id="thebarn-subscription-react-app-root">
+  {% comment %} React app will render here. Optional loading indicator: {% endcomment %}
+  <p style="text-align: center; padding: 20px;">Loading Subscriptions...</p>
+</div>
+
+{% comment %} Load JS using async/defer for better performance {% endcomment %}
+<script src="{{ 'index.js' | asset_url }}" defer></script>
+
+{% comment %} Schema defines how this block appears in the Theme Customizer {% endcomment %}
+{% schema %}
+{
+  "name": "Subscription Selector App",
+  "target": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Renders the interactive subscription builder."
+    }
+    // Add other settings here if needed later
+  ]
+}
+{% endschema %}
