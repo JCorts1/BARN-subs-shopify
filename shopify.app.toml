@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "0bbbc0aa442c7b7534f39b4a46fd0eb5"
-application_url = "https://alleged-antivirus-gpl-drugs.trycloudflare.com"
+application_url = "https://replied-once-cycles-costume.trycloudflare.com"
 embedded = true
 name = "subscriptions-block-app"
 handle = "subscriptions-block-app"
@@ -28,9 +28,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://alleged-antivirus-gpl-drugs.trycloudflare.com/auth/callback",
-  "https://alleged-antivirus-gpl-drugs.trycloudflare.com/auth/shopify/callback",
-  "https://alleged-antivirus-gpl-drugs.trycloudflare.com/api/auth/callback"
+  "https://replied-once-cycles-costume.trycloudflare.com/auth/callback",
+  "https://replied-once-cycles-costume.trycloudflare.com/auth/shopify/callback",
+  "https://replied-once-cycles-costume.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
